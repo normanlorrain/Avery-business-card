@@ -33,7 +33,7 @@ def createOutput(infileName, outfileName):
     card = pdfInput.pages[0]
 
     # Starting with a clean page, merge the input PDF at every tiled location
-    tilePage = PageObject.createBlankPage(None, width = 612, height = 792)
+    tilePage = PageObject.createBlankPage(None, width = PAGE_WIDTH, height = PAGE_HEIGHT)
     for x in range(2):
         for y in range(5):
             print(f'tiling {x}, {y}')
